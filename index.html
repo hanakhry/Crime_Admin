@@ -9,12 +9,16 @@
         <title>Dashboard - Criminology Toolkit</title>
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
         <link href="css/styles.css" rel="stylesheet" />
+		<link rel="icon" href="images/logo.png">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
     </head>
     <body class="sb-nav-fixed">
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
             <!-- Navbar Brand-->
-            <a class="navbar-brand ps-3" href="index.html">Criminology Toolkit</a>
+             <a class="navbar-brand ps-3" href="index.html"><img src="images/logo.png" alt="" style="max-height: 200px;
+                    max-width: 250;
+                    width: 25px;
+                    height: 25px;">  Criminology Toolkit</a>
             <!-- Sidebar Toggle-->
             <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
             <!-- Navbar Search-->
@@ -48,6 +52,14 @@
                                 Dashboard
                             </a>
                             <div class="sb-sidenav-menu-heading">Tools</div>
+							<a class="nav-link" href="web_crawl.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-scroll"></i></div>
+                                Web Crawler
+                            </a>
+							<a class="nav-link" href="db_search.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-database"></i></div>
+                                Analyze Data
+                            </a>
 							<a class="nav-link" href="rss_feed.html">
                                 <div class="sb-nav-link-icon"><i class="fas fa-rss-square"></i></div>
                                 News Live Feeds
@@ -56,11 +68,7 @@
                                 <div class="sb-nav-link-icon"><i class="fas fa-search"></i></div>
                                 Web Search
                             </a>
-                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
-                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
-                                Layouts
-                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                            </a>
+                            
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
                                     <a class="nav-link" href="layout-static.html">Static Navigation</a>
@@ -98,14 +106,14 @@
                                     </div>
                                 </nav>
                             </div>
-                            <div class="sb-sidenav-menu-heading">Addons & Guides</div>
-                            <a class="nav-link" href="charts.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
-                                Charts
+                             <div class="sb-sidenav-menu-heading">Addons & Guides</div>
+                            <a class="nav-link" href="guides.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-book"></i></div>
+                                Guides & Apps
                             </a>
-                            <a class="nav-link" href="tables.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
-                                Tables
+                            <a class="nav-link" href="downloads.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-download"></i></div>
+                                Download Flows 
                             </a>
                         </div>
                     </div>
