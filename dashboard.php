@@ -160,7 +160,7 @@
                         <div class="card mb-4">
                             <div class="card-header">
                                 <i class="fas fa-table me-1"></i>
-                                Crime Warehouse - Israel
+                                Crime Datastore - Israel
                             </div>
                             <div class="card-body">
                                 <table id="datatablesSimple">
