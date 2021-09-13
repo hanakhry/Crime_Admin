@@ -198,7 +198,7 @@
 									 $result= $conn-> query($sql1);
 									 $row = $result-> fetch_assoc();
 									 
-									 echo "<div class='card-body'>Death Cases: <b>".$row["Num"]."</b></div>";
+									 echo "<div class='card-body'>Death\Injury Cases: <b>".$row["Num"]."</b></div>";
 									 
 									 $conn-> close();
 									 ?>
