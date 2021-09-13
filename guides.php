@@ -160,7 +160,7 @@
 									 
 									 if ($result-> num_rows >0){
 									    while ($row = $result-> fetch_assoc()){
-										  echo "<tr><td>".$row["Title"]."</td><td>".$row["URL"]."</td><td>".$row["Summary"]."</td></tr>";
+										  echo "<tr><td>".$row["Title"]."</td><td><a target="_blank" href=".$row["URL"].">".$row["URL"]."</a></td><td>".$row["Summary"]."</td></tr>";
 										}
 										
 									 }
