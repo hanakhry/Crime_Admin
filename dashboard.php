@@ -111,13 +111,30 @@
                             </div>
                             <div class="col-xl-3 col-md-6">
                                 <div class="card bg-warning text-white mb-4">
-								   
+								    <?php 
+									 header('Content-Type: text/html; charset=utf-8');
+									
+									 $conn=mysqli_connect("sql11.freesqldatabase.com","sql11436586","pfVpqjsLH8","sql11436586");
+									 $conn->set_charset("utf8");
+									 if($conn-> connect_error){
+										
+									    die("Connection Failed:". $conn-> connect_error);
+									 }
+									 $sql= "SELECT COUNT(*) FROM Walla WHERE Summary LIKE '%סכין%' ";
+									 
+									 $result= $conn-> query($sql);
+									 $row = $result-> fetch_assoc();
+									 
+									 echo "<div class="card-body">Knife assault:".$row["Num_Knife"]."</div>";
+									 
+									 $conn-> close();
+									 ?>
                                     
 									
 									
-	
+											
 									
-									
+								
 									
 									
 									
