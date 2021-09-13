@@ -143,7 +143,7 @@
 									 $result= $conn-> query($sql);
 									 $row = $result-> fetch_assoc();
 									 
-									 echo "<div class='card-body'>Knife assault:".$row["Num"]."</div>";
+									 echo "<div class='card-body'>Knife assault: "."<button type='button' class='btn btn-outline-warning'>".$row["Num"]."</button></div>";
 									 
 									 $conn-> close();
 									 ?>
@@ -170,7 +170,7 @@
 									 $result= $conn-> query($sql1);
 									 $row = $result-> fetch_assoc();
 									 
-									 echo "<div class='card-body'>Gun assault:".$row["Num"]."</div>";
+									 echo "<div class='card-body'>Gun assault: "."<button type='button' class='btn btn-outline-warning'>".$row["Num"]."</button></div>";
 									 
 									 $conn-> close();
 									 ?>
