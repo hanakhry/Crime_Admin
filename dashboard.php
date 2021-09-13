@@ -120,24 +120,16 @@
 										
 									    die("Connection Failed:". $conn-> connect_error);
 									 }
-									 $sql= "SELECT COUNT(*) as 'Num_Knife' FROM Walla WHERE Summary LIKE '%סכין%'";
+									 $sql= "SELECT COUNT(*) as 'Num' FROM Walla WHERE Summary LIKE '%סכין%'";
 									 
 									 $result= $conn-> query($sql);
 									 $row = $result-> fetch_assoc();
 									 
-									 echo "<div class='card-body'>Knife assault:".$row["Num_Knife"]."</div>";
+									 echo "<div class='card-body'>Knife assault:".$row["Num"]."</div>";
 									 
 									 $conn-> close();
 									 ?>
-                                    
-									
-									
-											
-									
-								
-									
-									
-									
+                      
                                     <div class="card-footer d-flex align-items-center justify-content-between">
                                         <a class="small text-white stretched-link" href="#">View Details</a>
                                         <div class="small text-white"><i class="fas fa-angle-right"></i></div>
@@ -146,7 +138,25 @@
                             </div>
                             <div class="col-xl-3 col-md-6">
                                 <div class="card bg-warning text-white mb-4">
-                                    <div class="card-body">Gun assault: 120</div>
+								     <?php 
+									 header('Content-Type: text/html; charset=utf-8');
+									
+									 $conn=mysqli_connect("sql11.freesqldatabase.com","sql11436586","pfVpqjsLH8","sql11436586");
+									 $conn->set_charset("utf8");
+									 if($conn-> connect_error){
+										
+									    die("Connection Failed:". $conn-> connect_error);
+									 }
+									 $sql= "SELECT COUNT(*) as 'Num' FROM Walla WHERE Summary LIKE '%אקדח%' or LIKE '%נשק%' or LIKE '%רובה%' or LIKE '%ירה%'  ";
+									 
+									 $result= $conn-> query($sql);
+									 $row = $result-> fetch_assoc();
+									 
+									 echo "<div class='card-body'>Gun assault:".$row["Num"]."</div>";
+									 
+									 $conn-> close();
+									 ?>
+                                   
                                     <div class="card-footer d-flex align-items-center justify-content-between">
                                         <a class="small text-white stretched-link" href="#">View Details</a>
                                         <div class="small text-white"><i class="fas fa-angle-right"></i></div>
