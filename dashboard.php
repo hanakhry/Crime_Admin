@@ -142,7 +142,7 @@
                                 <div class="card mb-4">
                                     <div class="card-header">
                                         <i class="fas fa-chart-area me-1"></i>
-                                        תיקים במשטרה נגד אלימות כלפי נשים
+                                        Crime by date
                                     </div>
                                     <div class="card-body"><canvas id="myAreaChart" width="100%" height="40"></canvas></div>
                                 </div>
@@ -160,7 +160,7 @@
                         <div class="card mb-4">
                             <div class="card-header">
                                 <i class="fas fa-table me-1"></i>
-                                Crime by date
+                                Crime Warehouse - Israel
                             </div>
                             <div class="card-body">
                                 <table id="datatablesSimple">
