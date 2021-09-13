@@ -147,6 +147,7 @@
                                     </tfoot>
                                     <tbody>
                                      <?php 
+									 header('Content-Type: text/html; charset=utf-8');
 									 $conn=mysqli_connect("sql11.freesqldatabase.com","sql11436586","pfVpqjsLH8","sql11436586");
 									 if($conn-> connect_error){
 										
