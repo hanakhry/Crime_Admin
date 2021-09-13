@@ -102,7 +102,25 @@
                         <div class="row">
                             <div class="col-xl-3 col-md-6">
                                 <div class="card bg-primary text-white mb-4">
-                                    <div class="card-body">Physical violence: 1230</div>
+								    <?php 
+									 header('Content-Type: text/html; charset=utf-8');
+									
+									 $conn=mysqli_connect("sql11.freesqldatabase.com","sql11436586","pfVpqjsLH8","sql11436586");
+									 $conn->set_charset("utf8");
+									 if($conn-> connect_error){
+										
+									    die("Connection Failed:". $conn-> connect_error);
+									 }
+									 $sql1= "SELECT COUNT(*) as 'Num' FROM Walla WHERE Summary LIKE '%תקף%' or Summary LIKE '%אלימות%' or Summary LIKE '%היכה%'";
+									 
+									 $result= $conn-> query($sql1);
+									 $row = $result-> fetch_assoc();
+									 
+									 echo "<div class='card-body'>Physical violence:".$row["Num"]."</div>";
+									 
+									 $conn-> close();
+									 ?>
+                                    
                                     <div class="card-footer d-flex align-items-center justify-content-between">
                                         <a class="small text-white stretched-link" href="#">View Details</a>
                                         <div class="small text-white"><i class="fas fa-angle-right"></i></div>
@@ -147,9 +165,9 @@
 										
 									    die("Connection Failed:". $conn-> connect_error);
 									 }
-									 $sql= "SELECT COUNT(*) as 'Num' FROM Walla WHERE Summary LIKE '%אקדח%' or LIKE '%נשק%' or LIKE '%רובה%' or LIKE '%ירה%'  ";
+									 $sql1= "SELECT COUNT(*) as 'Num' FROM Walla WHERE Summary LIKE '%אקדח%' or Summary LIKE '%נשק%' or Summary LIKE '%רובה%'";
 									 
-									 $result= $conn-> query($sql);
+									 $result= $conn-> query($sql1);
 									 $row = $result-> fetch_assoc();
 									 
 									 echo "<div class='card-body'>Gun assault:".$row["Num"]."</div>";
@@ -165,7 +183,26 @@
                             </div>
                             <div class="col-xl-3 col-md-6">
                                 <div class="card bg-danger text-white mb-4">
-                                    <div class="card-body">Homicide: 69</div>
+								
+							         <?php 
+									 header('Content-Type: text/html; charset=utf-8');
+									
+									 $conn=mysqli_connect("sql11.freesqldatabase.com","sql11436586","pfVpqjsLH8","sql11436586");
+									 $conn->set_charset("utf8");
+									 if($conn-> connect_error){
+										
+									    die("Connection Failed:". $conn-> connect_error);
+									 }
+									 $sql1= "SELECT COUNT(*) as 'Num' FROM Walla WHERE Summary LIKE '%רצח%' or Summary LIKE '%הרג%'";
+									 
+									 $result= $conn-> query($sql1);
+									 $row = $result-> fetch_assoc();
+									 
+									 echo "<div class='card-body'>Homicide:".$row["Num"]."</div>";
+									 
+									 $conn-> close();
+									 ?>
+                                
                                     <div class="card-footer d-flex align-items-center justify-content-between">
                                         <a class="small text-white stretched-link" href="#">View Details</a>
                                         <div class="small text-white"><i class="fas fa-angle-right"></i></div>
