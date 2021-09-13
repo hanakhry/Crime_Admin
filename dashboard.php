@@ -143,7 +143,7 @@
 									 $result= $conn-> query($sql);
 									 $row = $result-> fetch_assoc();
 									 
-									 echo "<div class='card-body'>Knife assault: <button type='button' class='btn btn-outline-warning'>".$row["Num"]."</button></div>";
+									 echo "<div class='card-body'>Knife assault: <b>".$row["Num"]."</b></div>";
 									 
 									 $conn-> close();
 									 ?>
@@ -170,7 +170,7 @@
 									 $result= $conn-> query($sql1);
 									 $row = $result-> fetch_assoc();
 									 
-									 echo "<div class='card-body'>Gun assault: <button type='button' class='btn btn-outline-warning'>".$row["Num"]."</button></div>";
+									 echo "<div class='card-body'>Gun assault: <b>".$row["Num"]."</b></div>";
 									 
 									 $conn-> close();
 									 ?>
@@ -268,7 +268,7 @@
 									 
 									 if ($result-> num_rows >0){
 									    while ($row = $result-> fetch_assoc()){
-										  echo "<tr><td>".$row["Title"]."</td><td> <a target='_blank' href='".$row["URL"]."'>Link</a></td><td>".$row["Summary"]."</td></tr>";
+										  echo "<tr><td>".$row["Title"]."</td><td> <a target='_blank' href='".$row["URL"]."'><button type='button' class='btn btn-outline-primary'>Link</button></a></td><td>".$row["Summary"]."</td></tr>";
 										}
 										
 									 }
