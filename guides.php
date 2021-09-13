@@ -150,6 +150,7 @@
 									 header('Content-Type: text/html; charset=utf-8');
 									
 									 $conn=mysqli_connect("sql11.freesqldatabase.com","sql11436586","pfVpqjsLH8","sql11436586");
+									 mysql_set_charset("UTF8", $conn);
 									 if($conn-> connect_error){
 										
 									    die("Connection Failed:". $conn-> connect_error);
