@@ -124,17 +124,14 @@
 									 
 									 $result= $conn-> query($sql);
 									 
-									 echo "<div class="card-body">Knife assault:".$result."</div>";
+									 echo "<div class="card-body">Knife assault:".$result-> fetch_assoc()."</div>";
 									 
 									 $conn-> close();
 									 ?>
                                     
 									
 									
-									
-									
-									
-									
+											
 									
 									
 									
