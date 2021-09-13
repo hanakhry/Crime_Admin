@@ -111,12 +111,12 @@
 										
 									    die("Connection Failed:". $conn-> connect_error);
 									 }
-									 $sql1= "SELECT COUNT(*) as 'Num' FROM Walla WHERE Summary LIKE '%תקף%' or Summary LIKE '%אלימות%' or Summary LIKE '%היכה%'";
+									 $sql1= "SELECT(SELECT COUNT(*) FROM Walla WHERE Summary LIKE '%תקף%' or Summary LIKE '%תקפ%' or Summary LIKE '%היכה%')+(SELECT COUNT(*) FROM Ynet WHERE Summary LIKE '%תקף%' or Summary LIKE '%תקפ%' or Summary LIKE '%היכה%')+(SELECT COUNT(*) FROM Haaretz WHERE Title LIKE '%תקף%' or Title LIKE '%תקפ%' or Title LIKE '%היכה%')+(SELECT COUNT(*) FROM Kan WHERE Title LIKE '%תקף%' or Title LIKE '%תקפ%' or Title LIKE '%היכה%')+";
 									 
 									 $result= $conn-> query($sql1);
 									 $row = $result-> fetch_assoc();
 									 
-									 echo "<div class='card-body'>Physical violence:".$row["Num"]."</div>";
+									 echo "<div class='card-body'>Physical Violence: <b>".$row["Num"]."</b></div>";
 									 
 									 $conn-> close();
 									 ?>
@@ -193,12 +193,12 @@
 										
 									    die("Connection Failed:". $conn-> connect_error);
 									 }
-									 $sql1= "SELECT COUNT(*) as 'Num' FROM Walla WHERE Summary LIKE '%רצח%' or Summary LIKE '%הרג%'";
+									 $sql1= "SELECT(SELECT COUNT(*) FROM Walla WHERE Summary LIKE '%רצח%' or Summary LIKE '%הרג%')+(SELECT COUNT(*) FROM Ynet WHERE Summary LIKE '%רצח%' or Summary LIKE '%הרג%')+(SELECT COUNT(*) FROM Haaretz WHERE Title LIKE '%רצח%' or Title LIKE '%הרג%')+(SELECT COUNT(*) FROM Kan WHERE Title LIKE '%רצח%' or Title LIKE '%הרג%') as Num";
 									 
 									 $result= $conn-> query($sql1);
 									 $row = $result-> fetch_assoc();
 									 
-									 echo "<div class='card-body'>Homicide:".$row["Num"]."</div>";
+									 echo "<div class='card-body'>Death Cases: <b>".$row["Num"]."</b></div>";
 									 
 									 $conn-> close();
 									 ?>
