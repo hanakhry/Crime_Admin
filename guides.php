@@ -148,13 +148,14 @@
                                     <tbody>
                                      <?php 
 									 header('Content-Type: text/html; charset=utf-8');
-									 mysql_set_charset("UTF8", $conn);
+									
 									 $conn=mysqli_connect("sql11.freesqldatabase.com","sql11436586","pfVpqjsLH8","sql11436586");
 									 if($conn-> connect_error){
 										
 									    die("Connection Failed:". $conn-> connect_error);
 									 }
 									 $sql= "SELECT Title, URL, Summary from Walla";
+									 
 									 $result= $conn-> query($sql);
 									 
 									 if ($result-> num_rows >0){
