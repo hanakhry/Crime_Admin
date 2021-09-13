@@ -14,7 +14,7 @@
     <body class="sb-nav-fixed">
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
             <!-- Navbar Brand-->
-             <a class="navbar-brand ps-3" href="dashboard.php">"><img src="images/logo.png" alt="" style="max-height: 200px;
+             <a class="navbar-brand ps-3" href="dashboard.php"><img src="images/logo.png" alt="" style="max-height: 200px;
                     max-width: 250;
                     width: 25px;
                     height: 25px;">  Criminology Toolkit</a>
