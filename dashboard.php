@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
@@ -165,178 +164,47 @@
                             </div>
                             <div class="card-body">
                                 <table id="datatablesSimple">
-                                    <thead>
+                                     <thead>
                                         <tr>
-                                            <th>שם קורבן</th>
-                                            <th>איזור</th>
-                                            <th>תוקף</th>
-                                            <th>גיל קורבן</th>
-                                            <th>תאריך אירוע</th>
-                                            <th>כלי תקיפה</th>
+                                            <th>Title</th>
+                                            <th>URL</th>
+                                            <th>Summary</th>
+                                           
                                         </tr>
                                     </thead>
-                                    
-                                    <tbody>
+                                    <tfoot>
                                         <tr>
-                                        <th>דיאנה דדבייב</th>
-                                        <th>ישוב נעלה </th>
-                                        <th>בעלה</th>
-                                        <th>32</th>
-                                        <th>5.2.2021</th>
-                                        <th>אקדח, סכין </th>
-                                    </tr>
-                                    <tr>
-                                        <th>ופאא עבאהרה</th>
-                                        <th>עראבה</th>
-                                        <th>בעלה</th>
-                                        <th>45</th>
-                                        <th>16.11.2020</th>
-                                        <th> סכין </th>
-                                    </tr>
-                                    <tr>
-                                        <td>נורה אבן כבדה</td>
-                                        <td>כפר טובא-זנגריה</td>
-                                        <td>בעל</td>
-                                        <td>53</td>
-                                        <td>1.8.2020</td>
-                                        <td>אבן </td>
-                                    </tr>
-                                    <tr>
-                                        <td>שאדיה אבי סירחאן</td>
-                                        <td>נגב</td>
-                                        <td>קרוב משפחה</td>
-                                        <td>35</td>
-                                        <td>13.1.2020</td>
-                                        <td>אלימות</td>
-                                    </tr>
-                                    <tr>
-                                        <td>נסרין גבארה</td>
-                                        <td>טייבה</td>
-                                        <td>לא נקבע</td>
-                                        <td>36</td>
-                                        <td>1.3.2020</td>
-                                        <td>אקדח</td>
-                                    </tr>
-                                    <tr>
-                                        <td>זמזם מחאמיד</td>
-                                        <td> אום אל-פחם</td>
-                                        <td>לא-נקבע</td>
-                                        <td>19</td>
-                                        <td>18.3.2020</td>
-                                        <td>אקדח</td>
-                                    </tr>
-                                    <tr>
-                                        <td>תמאם ג'באלי</td>
-                                        <td> טייבה</td>
-                                        <td>לא נקבע</td>
-                                        <td>84</td>
-                                        <td>25.3.2020</td>
-                                        <td>אקדח</td>
-                                    </tr>
-                                    <tr>
-                                        <td>מרוות דסוקי </td>
-                                        <td>לוד</td>
-                                        <td>אלמוני </td>
-                                        <td>48</td>
-                                        <td>18.4.2020</td>
-                                        <td>אקדח</td>
-                                    </tr>
-                                    <tr>
-                                        <td>ניבין עמרני</td>
-                                        <td>חורה</td>
-                                        <td>אביה , אחיה, אחיינה</td>
-                                        <td>21</td>
-                                        <td> 17.4.2020</td>
-                                        <td>סכין</td>
-                                    </tr>
-                                    <tr>
-                                        <td>ופא גוהר</td>
-                                        <td>טייבה</td>
-                                        <td>בעלה</td>
-                                        <td>41</td>
-                                        <td>2.7.2020</td>
-                                        <td>סכין</td>
-                                    </tr>
-                                    <tr>
-                                        <td>רפיף אל-קראעין</td>
-                                        <td>עיסאוויה </td>
-                                        <td>לא ידוע</td>
-                                        <td>4</td>
-                                        <td>1.6.2020</td>
-                                        <td>אקדח</td>
-                                    </tr>
-                                    <tr>
-                                        <td>חנאן זלום</td>
-                                        <td>מזרח ירושליים</td>
-                                        <td>לא ידוע</td>
-                                        <td>4</td>
-                                        <td>6.8.2020</td>
-                                        <td>אקדח</td>
-                                    </tr>
-                                    <tr>
-                                        <td> אנסטסיה קלין</td>
-                                        <td> מרכז</td>
-                                        <td>בן זוג</td>
-                                        <td>52</td>
-                                        <td>2012.12.18</td>
-                                        <td>אלימות</td>
-                                    </tr>
-                                    <tr>
-                                        <td>טטאינה חייקין</td>
-                                        <td>בת ים</td>
-                                        <td>בן זוג</td>
-                                        <td>50</td>
-                                        <td>3.5.2020</td>
-                                        <td>סכין</td>
-                                    </tr>
-                                    <tr>
-                                        <td>מיכל סלה</td>
-                                        <td>ישוב מוצא</td>
-                                        <td>בן זוג</td>
-                                        <td>32</td>
-                                        <td>3.10.2019</td>
-                                        <td>סכין</td>
-                                    </tr>
-                                    <tr>
-                                        <td>מאיה ווישניאק</td>
-                                        <td>רמת גן</td>
-                                        <td>בן זוג</td>
-                                        <td>22</td>
-                                        <td>15.5.2020</td>
-                                        <td>אלימות</td>
-                                    </tr>
-                                    <tr>
-                                        <td> מסטוואל אלאזה </td>
-                                        <td>חולון</td>
-                                        <td>בעלה</td>
-                                        <td>31</td>
-                                        <td>28.4.2020</td>
-                                        <td>אלימות</td>
-                                    </tr>
-                                    <tr>
-                                        <td>חנאן אלבחירי</td>
-                                        <td>לקיה </td>
-                                        <td> בני משפחת אביה </td>
-                                        <td>19</td>
-                                        <td>3.5.2017</td>
-                                        <td>שבירת המפרקת </td>
-                                    </tr>
-                                    <tr>
-                                        <td>רואן אלקרנאווי</td>
-                                        <td>רהט</td>
-                                        <td>בעלה</td>
-                                        <td>29</td>
-                                        <td>14.06.2020</td>
-                                        <td>אלימות</td>
-                                    </tr>
-                                    <tr>
-                                        <td> אופירה חיים</td>
-                                        <td> תל מונד</td>
-                                        <td>גרושה</td>
-                                        <td>56</td>
-                                        <td>2017</td>
-                                        <td>אלימות</td>
-                                    </tr>
+                                            <th>Title</th>
+                                            <th>URL</th>
+                                            <th>Summary</th>
+                                        </tr>
+                                    </tfoot>
+                                    <tbody>
+                                     <?php 
+									 header('Content-Type: text/html; charset=utf-8');
+									
+									 $conn=mysqli_connect("sql11.freesqldatabase.com","sql11436586","pfVpqjsLH8","sql11436586");
+									 $conn->set_charset("utf8");
+									 if($conn-> connect_error){
+										
+									    die("Connection Failed:". $conn-> connect_error);
+									 }
+									 $sql= "SELECT Title, URL, Summary from Walla";
+									 
+									 $result= $conn-> query($sql);
+									 
+									 if ($result-> num_rows >0){
+									    while ($row = $result-> fetch_assoc()){
+										  echo "<tr><td>".$row["Title"]."</td><td> <a target='_blank' href='".$row["URL"]."'>Link</a></td><td>".$row["Summary"]."</td></tr>";
+										}
+										
+									 }
+									 else {
+									  echo "0 result";
+									 }
+									 
+									 $conn-> close();
+									 ?>
                                     </tbody>
                                 </table>
                             </div>
