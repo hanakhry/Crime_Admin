@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Web Crawler</title>
+        <title>Guides</title>
         <link href="css/styles.css" rel="stylesheet" />
 		<link rel="icon" href="images/logo.png">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
@@ -74,15 +74,45 @@
                                     <a class="nav-link" href="layout-sidenav-light.html">Light Sidenav</a>
                                 </nav>
                             </div>
-                          
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
+                                <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                                Pages
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
+                                        Authentication
+                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                    </a>
+                                    <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
+                                        <nav class="sb-sidenav-menu-nested nav">
+                                            <a class="nav-link" href="login.html">Login</a>
+                                            <a class="nav-link" href="register.html">Register</a>
+                                            <a class="nav-link" href="password.html">Forgot Password</a>
+                                        </nav>
+                                    </div>
+                                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
+                                        Error
+                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                    </a>
+                                    <div class="collapse" id="pagesCollapseError" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
+                                        <nav class="sb-sidenav-menu-nested nav">
+                                            <a class="nav-link" href="401.html">401 Page</a>
+                                            <a class="nav-link" href="404.html">404 Page</a>
+                                            <a class="nav-link" href="500.html">500 Page</a>
+                                        </nav>
+                                    </div>
+                                </nav>
+                            </div>
                             <div class="sb-sidenav-menu-heading">Addons & Guides</div>
                             <a class="nav-link" href="guides.html">
                                 <div class="sb-nav-link-icon"><i class="fas fa-book"></i></div>
-                                Guides & Manuals
+                                Guides & Apps
                             </a>
                             <a class="nav-link" href="downloads.html">
                                 <div class="sb-nav-link-icon"><i class="fas fa-download"></i></div>
-                                Automation Crawlers 
+                                Download Flows 
                             </a>
                         </div>
                     </div>
@@ -95,40 +125,29 @@
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-4">
-                        <h1 class="mt-4">Web Crawler</h1>
+                        <h1 class="mt-4">Guides</h1>
                         <ol class="breadcrumb mb-4">
                             <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                            <li class="breadcrumb-item active">Web Crawl</li>
+                            <li class="breadcrumb-item active">Guides</li>
                         </ol>
-						<div class="card mb-4">
-
-						<div class="card-body">
-						<a href="https://download.octoparse.bazhuayu.com/client/en-US/win/Octoparse%20Setup%208.2.4.exe" rel="noopener noreferrer"><button type="button" class="btn btn-primary" style="">Run Octoparse</button></a>
-						<a href="automations.html" rel="noopener noreferrer"><button type="button" class="btn btn-primary" style="">Install Automations </button></a>
-						<h6>Username: crime.haifauni@gmail.com </h6>
-						<h6>Password: Admin@2021</h6>
-						</div>
-						
+                        <div class="card mb-4">
                             <div class="card-body">
 							
-                              <iframe width="560" height="315" src="https://www.youtube.com/embed/xBBAD407zzU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                              
-							  <iframe width="560" height="315" src="https://www.youtube.com/embed/s6pirJKtVk0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-							  <img src="images/octoparse1.png"  width="750" height="400">
-							  <img src="images/octoparse2.png"  width="750" height="400">
-							  <img src="images/octoparse3.png"  width="750" height="400">
-							  <img src="images/octoparse4.png"  width="750" height="400">
+                              
 							  
                             </div>
                         </div>
-                      
-                       
+                        <div style="height: 100vh"></div>
+                        <div class="card mb-4"><div class="card-body">  </div></div>
                     </div>
                 </main>
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid px-4">
                         <div class="d-flex align-items-center justify-content-between small">
                             <div class="text-muted">Copyright &copy; IS Final Project 2021</div>
-
+                            <div>
+                                
+                            </div>
                         </div>
                     </div>
                 </footer>
