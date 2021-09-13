@@ -97,12 +97,12 @@
                     <div class="container-fluid px-4">
                         <h1 class="mt-4">AI Statistics</h1>
                         <ol class="breadcrumb mb-4">
-                            <li class="breadcrumb-item active">Crime Against Women</li>
+                            <li class="breadcrumb-item active">Crime Cases Against Women</li>
                         </ol>
                         <div class="row">
                             <div class="col-xl-3 col-md-6">
                                 <div class="card bg-primary text-white mb-4">
-                                    <div class="card-body">מקרי אלימות פיזית: 560</div>
+                                    <div class="card-body">Physical violence: 230</div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
                                         <a class="small text-white stretched-link" href="#">View Details</a>
                                         <div class="small text-white"><i class="fas fa-angle-right"></i></div>
@@ -111,7 +111,7 @@
                             </div>
                             <div class="col-xl-3 col-md-6">
                                 <div class="card bg-warning text-white mb-4">
-                                    <div class="card-body">תקיפה בסכין: 456</div>
+                                    <div class="card-body">Knife assault: 323</div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
                                         <a class="small text-white stretched-link" href="#">View Details</a>
                                         <div class="small text-white"><i class="fas fa-angle-right"></i></div>
@@ -120,7 +120,7 @@
                             </div>
                             <div class="col-xl-3 col-md-6">
                                 <div class="card bg-warning text-white mb-4">
-                                    <div class="card-body">תקיפה באקדח: 56</div>
+                                    <div class="card-body">Gun assault: 120</div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
                                         <a class="small text-white stretched-link" href="#">View Details</a>
                                         <div class="small text-white"><i class="fas fa-angle-right"></i></div>
@@ -129,7 +129,7 @@
                             </div>
                             <div class="col-xl-3 col-md-6">
                                 <div class="card bg-danger text-white mb-4">
-                                    <div class="card-body">מקרי רצח: 67</div>
+                                    <div class="card-body">Homicide: 69</div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
                                         <a class="small text-white stretched-link" href="#">View Details</a>
                                         <div class="small text-white"><i class="fas fa-angle-right"></i></div>
