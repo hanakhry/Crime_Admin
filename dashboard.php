@@ -120,12 +120,12 @@
 										
 									    die("Connection Failed:". $conn-> connect_error);
 									 }
-									 $sql= "SELECT COUNT(*) FROM Walla WHERE Summary LIKE '%סכין%' ";
+									 $sql= "SELECT COUNT(*) as 'Num_Knife' FROM Walla WHERE Summary LIKE '%סכין%'";
 									 
 									 $result= $conn-> query($sql);
 									 $row = $result-> fetch_assoc();
 									 
-									 echo "<div class="card-body">Knife assault:".$row["Num_Knife"]."</div>";
+									 echo "<div class='card-body'>Knife assault:".$row["Num_Knife"]."</div>";
 									 
 									 $conn-> close();
 									 ?>
