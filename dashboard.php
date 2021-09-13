@@ -138,7 +138,7 @@
 										
 									    die("Connection Failed:". $conn-> connect_error);
 									 }
-									 $sql= "SELECT COUNT(*) as 'Num' FROM Walla WHERE Summary LIKE '%סכין%'";
+									 $sql= "SELECT(SELECT COUNT(*) FROM Walla WHERE Summary LIKE '%סכין%') + (SELECT COUNT(*) FROM Haaretz WHERE Title LIKE '%סכין%') + (SELECT COUNT(*) FROM Ynet WHERE Summary LIKE '%סכין%') + (SELECT COUNT(*) FROM Kan WHERE Title LIKE '%סכין%') as Num";
 									 
 									 $result= $conn-> query($sql);
 									 $row = $result-> fetch_assoc();
