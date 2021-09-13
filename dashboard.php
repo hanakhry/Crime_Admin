@@ -95,14 +95,14 @@
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-4">
-                        <h1 class="mt-4">סטטיסטיקה לשנת 2021</h1>
+                        <h1 class="mt-4">AI Statistics</h1>
                         <ol class="breadcrumb mb-4">
-                            <li class="breadcrumb-item active">אלימות נגד נשים</li>
+                            <li class="breadcrumb-item active">Crime Against Women</li>
                         </ol>
                         <div class="row">
                             <div class="col-xl-3 col-md-6">
                                 <div class="card bg-primary text-white mb-4">
-                                    <div class="card-body">75 תיקים טופלו</div>
+                                    <div class="card-body">מקרי אלימות פיזית: 560</div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
                                         <a class="small text-white stretched-link" href="#">View Details</a>
                                         <div class="small text-white"><i class="fas fa-angle-right"></i></div>
@@ -111,7 +111,7 @@
                             </div>
                             <div class="col-xl-3 col-md-6">
                                 <div class="card bg-warning text-white mb-4">
-                                    <div class="card-body">430 תלונות איום</div>
+                                    <div class="card-body">תקיפה בסכין: 456</div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
                                         <a class="small text-white stretched-link" href="#">View Details</a>
                                         <div class="small text-white"><i class="fas fa-angle-right"></i></div>
@@ -120,7 +120,7 @@
                             </div>
                             <div class="col-xl-3 col-md-6">
                                 <div class="card bg-warning text-white mb-4">
-                                    <div class="card-body">תקיפה פיזית 129</div>
+                                    <div class="card-body">תקיפה באקדח: 56</div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
                                         <a class="small text-white stretched-link" href="#">View Details</a>
                                         <div class="small text-white"><i class="fas fa-angle-right"></i></div>
@@ -129,7 +129,7 @@
                             </div>
                             <div class="col-xl-3 col-md-6">
                                 <div class="card bg-danger text-white mb-4">
-                                    <div class="card-body">12 נרצחות</div>
+                                    <div class="card-body">מקרי רצח: 67</div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
                                         <a class="small text-white stretched-link" href="#">View Details</a>
                                         <div class="small text-white"><i class="fas fa-angle-right"></i></div>
@@ -151,7 +151,7 @@
                                 <div class="card mb-4">
                                     <div class="card-header">
                                         <i class="fas fa-chart-bar me-1"></i>
-                                        טבלת תלונות על תקיפת נשים
+                                        News by source
                                     </div>
                                     <div class="card-body"><canvas id="myBarChart" width="100%" height="40"></canvas></div>
                                 </div>
@@ -160,7 +160,7 @@
                         <div class="card mb-4">
                             <div class="card-header">
                                 <i class="fas fa-table me-1"></i>
-                                מידע מקרי תקיפה
+                                Crime by date
                             </div>
                             <div class="card-body">
                                 <table id="datatablesSimple">
