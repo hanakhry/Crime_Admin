@@ -7,10 +7,10 @@ var ctx = document.getElementById("myPieChart");
 var myPieChart = new Chart(ctx, {
   type: 'pie',
   data: {
-    labels: ["Physical Violence", "Death\Injury", "Gun Assault", "Knife Assault"],
+    labels: ["Physical Violence", "Gun Assault", "Knife Assault"],
     datasets: [{
       data: [319, 6014, 767, 232],
-      backgroundColor: ['#007bff', '#dc3545', '#ffc107', '#28a745'],
+      backgroundColor: ['#007bff','#ffc107', '#28a745'],
     }],
   },
 });
