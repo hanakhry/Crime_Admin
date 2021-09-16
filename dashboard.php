@@ -288,32 +288,7 @@
 									 else {
 									  echo "0 result";
 									 }
-									 $sql3= "SELECT Title, URL from Kan";
-									 
-									 $result3= $conn-> query($sql3);
-									 
-									 if ($result3-> num_rows >0){
-									    while ($row = $result3-> fetch_assoc()){
-										  echo "<tr><td>".$row["Title"]."</td><td> <a target='_blank' href='".$row["URL"]."'><button type='button' class='btn btn-outline-primary'>Link</button></a></td></tr>";
-										}
-										
-									 }
-									 else {
-									  echo "0 result";
-									 }
-									 $sql4= "SELECT Title, URL, Summary from Haaretz";
-									 
-									 $result4= $conn-> query($sql4);
-									 
-									 if ($result4-> num_rows >0){
-									    while ($row = $result4-> fetch_assoc()){
-										  echo "<tr><td>".$row["Title"]."</td><td> <a target='_blank' href='".$row["URL"]."'><button type='button' class='btn btn-outline-primary'>Link</button></a></td><td>".$row["Summary"]."</td></tr>";
-										}
-										
-									 }
-									 else {
-									  echo "0 result";
-									 }
+								
 									 
 									 $conn-> close();
 									 ?>
