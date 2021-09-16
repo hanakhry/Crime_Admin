@@ -262,12 +262,51 @@
 										
 									    die("Connection Failed:". $conn-> connect_error);
 									 }
-									 $sql= "SELECT Title, URL, Summary from Walla";
+									 $sql1= "SELECT Title, URL, Summary from Walla";
 									 
-									 $result= $conn-> query($sql);
+									 $result1= $conn-> query($sql1);
 									 
-									 if ($result-> num_rows >0){
-									    while ($row = $result-> fetch_assoc()){
+									 if ($result1-> num_rows >0){
+									    while ($row = $result1-> fetch_assoc()){
+										  echo "<tr><td>".$row["Title"]."</td><td> <a target='_blank' href='".$row["URL"]."'><button type='button' class='btn btn-outline-primary'>Link</button></a></td><td>".$row["Summary"]."</td></tr>";
+										}
+										
+									 }
+									 else {
+									  echo "0 result";
+									 }
+									 $sql2= "SELECT Title, URL, Summary from Ynet";
+									 
+									 $result2= $conn-> query($sql2);
+									 
+									 if ($result2-> num_rows >0){
+									    while ($row = $result2-> fetch_assoc()){
+										  echo "<tr><td>".$row["Title"]."</td><td> <a target='_blank' href='".$row["URL"]."'><button type='button' class='btn btn-outline-primary'>Link</button></a></td><td>".$row["Summary"]."</td></tr>";
+										}
+										
+									 }
+									 else {
+									  echo "0 result";
+									 }
+									 $sql3= "SELECT Title, URL from Kan";
+									 
+									 $result3= $conn-> query($sql3);
+									 
+									 if ($result3-> num_rows >0){
+									    while ($row = $result3-> fetch_assoc()){
+										  echo "<tr><td>".$row["Title"]."</td><td> <a target='_blank' href='".$row["URL"]."'><button type='button' class='btn btn-outline-primary'>Link</button></a></td></tr>";
+										}
+										
+									 }
+									 else {
+									  echo "0 result";
+									 }
+									 $sql4= "SELECT Title, URL, Summary from Haaretz";
+									 
+									 $result4= $conn-> query($sql4);
+									 
+									 if ($result4-> num_rows >0){
+									    while ($row = $result4-> fetch_assoc()){
 										  echo "<tr><td>".$row["Title"]."</td><td> <a target='_blank' href='".$row["URL"]."'><button type='button' class='btn btn-outline-primary'>Link</button></a></td><td>".$row["Summary"]."</td></tr>";
 										}
 										
@@ -300,7 +339,7 @@
         <script src="js/scripts.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
         <script src="assets/demo/chart-area-demo.js"></script>
-        <script src="assets/demo/chart-bar-demo.js"></script>
+        <script src="js/chart-bar.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
         <script src="js/datatables-simple-demo.js"></script>
     </body>
