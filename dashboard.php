@@ -128,7 +128,7 @@
                                 </div>
                             </div>
                             <div class="col-xl-3 col-md-6">
-                                <div class="card bg-warning text-white mb-4">
+                                <div class="card text-white bg-success mb-3">
 								    <?php 
 									 header('Content-Type: text/html; charset=utf-8');
 									
@@ -217,7 +217,7 @@
                                         <i class="fas fa-chart-area me-1"></i>
                                         Crime by date
                                     </div>
-                                    <div class="card-body"><canvas id="myAreaChart" width="100%" height="40"></canvas></div>
+                                    <div class="card-body"><canvas id="myPieChart" width="100%" height="40"></canvas></div>
                                 </div>
                             </div>
                             <div class="col-xl-6">
@@ -226,7 +226,7 @@
                                         <i class="fas fa-chart-bar me-1"></i>
                                         News by source
                                     </div>
-                                    <div class="card-body"><canvas id="myPieChart" width="100%" height="40"></canvas></div>
+                                    <div class="card-body"><canvas id="myBarChart" width="100%" height="40"></canvas></div>
                                 </div>
                             </div>
                         </div>
