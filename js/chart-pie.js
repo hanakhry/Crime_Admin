@@ -9,7 +9,7 @@ var myPieChart = new Chart(ctx, {
   data: {
     labels: ["Physical Violence", "Gun Assault", "Knife Assault"],
     datasets: [{
-      data: [319, 6014, 767, 232],
+      data: [319, 767, 232],
       backgroundColor: ['#007bff','#ffc107', '#28a745'],
     }],
   },
