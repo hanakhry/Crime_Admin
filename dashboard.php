@@ -80,7 +80,7 @@
                                 <div class="sb-nav-link-icon"><i class="fas fa-book"></i></div>
                                 Guides & Manuals 
                             </a>
-                            <a class="nav-link" href="downloads.html">
+                            <a class="nav-link" href="automations.html">
                                 <div class="sb-nav-link-icon"><i class="fas fa-download"></i></div>
                                 Automation Crawlers 
                             </a>
