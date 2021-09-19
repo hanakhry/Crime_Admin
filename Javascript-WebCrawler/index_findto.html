@@ -75,10 +75,10 @@
 
 		  	<ul>
 			    <li>
-					<button type="button" class="tab-button nav-btn icon-news" onclick="hideEngines(); openTab(event, 'news-tab'); selectedButton(this); haaretz()">News</button>
+					<button type="button" class="tab-button nav-btn icon-news" onclick="showEngines(); openTab(event, 'news-tab'); selectedButton(this); haaretz()">News</button>
 				</li>
 				<li>
-					<button id="default-tab" type="button" class="tab-button nav-btn icon-web" onclick="showEngines(); openTab(event, 'google-tab'); selectedButton(this); google()">Web</button>
+					<button id="default-tab" type="button" class="tab-button nav-btn icon-web" onclick="hideEngines(); openTab(event, 'google-tab'); selectedButton(this); google()">Web</button>
 				</li>
 				<li>
 					<button type="button" class="tab-button nav-btn icon-social" onclick="hideEngines(); openTab(event, 'social-tab'); selectedButton(this); facebook()">Social</button>
