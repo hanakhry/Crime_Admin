@@ -820,7 +820,7 @@ function macys() {
 //	News
 
 function haaretz() {
-	document.getElementById("walla").checked=true;
+	document.getElementById("haaretz").checked=true;
 	xUrl="https://www.haaretz.co.il/search-results?q=";
 	xColor="#0085c8";
 	xImage="haaretz";
