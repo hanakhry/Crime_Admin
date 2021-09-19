@@ -89,10 +89,7 @@
 				<li>
 					<button type="button" class="tab-button nav-btn icon-image" onclick="hideEngines(); openTab(event, 'image-tab'); selectedButton(this); flickr()">Image</button>
 				</li>
-				<li>
-					<button type="button" class="tab-button nav-btn icon-music" onclick="hideEngines(); openTab(event, 'audio-tab'); selectedButton(this); spotify()">Audio</button>
-				</li>
-				
+						
 				
 				<li>
 					<button type="button" class="tab-button nav-btn icon-knowledge" onclick="hideEngines(); openTab(event, 'knowledge-tab'); selectedButton(this); wikipedia()">Reference</button>
@@ -100,7 +97,7 @@
 				
 		    </ul>
 
-		    <button id="info-button" data-fancybox data-src="#info">Settings</button>
+		    <button id="info-button" data-fancybox >Settings</button>
 
 	    </nav>
 
@@ -695,41 +692,15 @@
 			</div>
 
 			<!-- Share -->
-			<div class="widget widget-share">
-
-				<figure><h2>Share</h2></figure>
-
-				<a href="https://twitter.com/intent/tweet?url=https://findto.app&amp;text=Findto.app — A web search tool for diversity and privacy" onclick="window.open(this.href, 'twitter-share', 'width=520,height=245');return false;" class="icon-twitter" title="Twitter" aria-label="Tweet on Twitter">Tweet</a>
-				<a href="https://www.facebook.com/sharer/sharer.php?u=https://findto.app" onclick="window.open(this.href, 'facebook-share','width=580,height=420');return false;" class="icon-facebook" title="Facebook" aria-label="Share on Facebook">Share</a>
-				<a href="https://github.com/inblug/findto/" target="_blank" rel="noopener" title="GitHub" aria-label="Star on GitHub">Star</a>
-
-			</div>
-
-			<!-- Weather -->
-			<div class="widget widget-weather" >
-
-				<!-- Elements will be added with JS -->
-				<figure id="test"></figure>
-				<div id="weatherBlock">
-					<h2 id="weather-load-warning">Please allow Localization access</h2>
-				</div>
-				
-			</div>
+		
+			
 
 		</div>
 		
 	</section>
 
 	<!-- Settings -->
-	<div id="info" style="display:none;">
-
-		<h1>Findto.app v1.0</h1>
-		<p>A web search tool for diversity and privacy</p>
-
-		<p>Made with love by <a href="https://lucasmaues.com" target="_blank" rel="noopener">Lucas Maués</a></p>
-		<p>Brought to you by <a href="https://inblug.com" target="_blank" rel="noopener">Inblug</a></p>
-
-	</div>
+	
 
 	<footer>
 		<p><a data-fancybox data-src="#about" href="javascript:;">About</a> · <a data-fancybox data-src="#privacy" href="javascript:;">Privacy</a> · <a data-fancybox data-src="#terms" href="javascript:;">Terms</a> · <a data-fancybox data-src="#license" href="javascript:;">Licenses</a>  · <a data-fancybox data-src="#feedback" href="javascript:;">Feedback</a></p>
