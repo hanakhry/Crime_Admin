@@ -74,6 +74,9 @@
 	   		<button id="menu-button" type="button">Menu</button>
 
 		  	<ul>
+			    <li>
+					<button type="button" class="tab-button nav-btn icon-news" onclick="hideEngines(); openTab(event, 'news-tab'); selectedButton(this); reuters()">News</button>
+				</li>
 				<li>
 					<button id="default-tab" type="button" class="tab-button nav-btn icon-web" onclick="showEngines(); openTab(event, 'google-tab'); selectedButton(this); google()">Web</button>
 				</li>
@@ -89,24 +92,12 @@
 				<li>
 					<button type="button" class="tab-button nav-btn icon-music" onclick="hideEngines(); openTab(event, 'audio-tab'); selectedButton(this); spotify()">Audio</button>
 				</li>
-				<li>
-					<button type="button" class="tab-button nav-btn icon-local" onclick="hideEngines(); openTab(event, 'local-tab'); selectedButton(this); foursquare()">Local</button>
-				</li>
-				<li>
-					<button type="button" class="tab-button nav-btn icon-shopping" onclick="hideEngines(); openTab(event, 'shopping-tab'); selectedButton(this); amazon()">Shopping</button>
-				</li>
-				<li>
-					<button type="button" class="tab-button nav-btn icon-news" onclick="hideEngines(); openTab(event, 'news-tab'); selectedButton(this); reuters()">News</button>
-				</li>
+				
+				
 				<li>
 					<button type="button" class="tab-button nav-btn icon-knowledge" onclick="hideEngines(); openTab(event, 'knowledge-tab'); selectedButton(this); wikipedia()">Reference</button>
 				</li>
-				<li>
-					<button type="button" class="tab-button nav-btn icon-projects" onclick="hideEngines(); openTab(event, 'projects-tab'); selectedButton(this); github()">Projects</button>
-				</li>
-				<li>
-					<button type="button" class="tab-button nav-btn icon-torrent" onclick="hideEngines(); openTab(event, 'torrent-tab'); selectedButton(this); pirateBay()">Torrent</button>
-				</li>
+				
 		    </ul>
 
 		    <button id="info-button" data-fancybox data-src="#info">Settings</button>
@@ -169,17 +160,6 @@
 					<input type="radio" name="google" id="google_news" onclick="q(); googleNews()">
 					<label for="google_news">News</label>
 
-					<input type="radio" name="google" id="google_maps" onclick="googleMaps()">
-					<label for="google_maps">Maps</label>
-
-					<input type="radio" name="google" id="google_shopping" onclick="q(); googleShopping()">
-					<label for="google_shopping">Shopping</label>
-
-					<input type="radio" name="google" id="google_books" onclick="q(); googleBooks()">
-					<label for="google_books">Books</label>
-
-					<input type="radio" name="google" id="google_translate" onclick="googleTranslate()">
-					<label for="google_translate">Translate</label>
 
 				</div>
 
@@ -198,14 +178,6 @@
 					<input type="radio" name="bing" id="bing_news" onclick="q(); bingNews()">
 					<label for="bing_news">News</label>
 
-					<input type="radio" name="bing" id="bing_maps" onclick="q(); bingMaps()">
-					<label for="bing_maps">Maps</label>
-
-					<input type="radio" name="bing" id="bing_translator" onclick="bingTranslator()">
-					<label for="bing_translator">Translator</label>
-
-					<input type="radio" name="bing" id="bing_events" onclick="q(); bingEvents()">
-					<label for="bing_events">Events</label>
 
 				</div>
 
@@ -227,15 +199,6 @@
 					<input type="radio" name="yahoo" id="yahoo-local" onclick="q(); yahooLocal()">
 					<label for="yahoo-local">Local</label>
 
-					<input type="radio" name="yahoo" id="yahoo-answers" onclick="q(); yahooAnswers()">
-					<label for="yahoo-answers">Answers</label>
-
-					<input type="radio" name="yahoo" id="yahoo-shopping" onclick="q(); yahooShopping()">
-					<label for="yahoo-shopping">Shopping</label>
-
-					<input type="radio" name="yahoo" id="yahoo-finance" onclick="q(); yahooFinance()">
-					<label for="yahoo-finance">Finance</label>
-
 				</div>
 
 				<!-- DuckDuckGo -->
@@ -252,12 +215,6 @@
 
 					<input type="radio" name="duckgo" id="duckgo_news" onclick="q(); duckgoNews()">
 					<label for="duckgo_news">News</label>
-
-					<input type="radio" name="duckgo" id="duckgo_meanings" onclick="q(); duckgoMeanings()">
-					<label for="duckgo_meanings">Meanings</label>
-
-					<input type="radio" name="duckgo" id="duckgo_stock" onclick="q(); duckgoStock()">
-					<label for="duckgo_stock">Stock</label>
 
 				</div>
 
@@ -289,16 +246,7 @@
 
 					<input type="radio" name="qwant" id="qwant_news" onclick="q(); qwantNews()">
 					<label for="qwant_news">News</label>
-
-					<input type="radio" name="qwant" id="qwant_social" onclick="q(); qwantSocial()">
-					<label for="qwant_social">Social</label>
-
-					<input type="radio" name="qwant" id="qwant_music" onclick="q(); qwantMusic(); clearHelper()">
-					<label for="qwant_music">Music</label>
-
-					<input type="radio" name="qwant" id="qwant_shopping" onclick="q(); qwantShopping()">
-					<label for="qwant_shopping">Shopping</label>
-
+					
 				</div>
 
 				<!-- searx -->
@@ -315,21 +263,6 @@
 
 					<input type="radio" name="searx" id="searx_news" onclick="q(); searxNews()">
 					<label for="searx_news">News</label>
-
-					<input type="radio" name="searx" id="searx_map" onclick="q(); searxMap()">
-					<label for="searx_map">Map</label>
-
-					<input type="radio" name="searx" id="searx_music" onclick="q(); searxMusic()">
-					<label for="searx_music">Music</label>
-
-					<input type="radio" name="searx" id="searx_files" onclick="q(); searxFiles()">
-					<label for="searx_files">Files</label>
-
-					<input type="radio" name="searx" id="searx_it" onclick="q(); searxIt()">
-					<label for="searx_it">IT</label>
-
-					<input type="radio" name="searx" id="searx_science" onclick="q(); searxScience()">
-					<label for="searx_science">Science</label>
 
 				</div>
 
@@ -348,11 +281,6 @@
 					<input type="radio" id="baidu4" name="baidu" onclick="inputFocus(); baiduNews()">
 					<label for="baidu4">News</label>
 
-					<input type="radio" id="baidu5" name="baidu" onclick="inputFocus(); baiduMaps()">
-					<label for="baidu5">Maps</label>
-
-					<input type="radio" id="baidu6" name="baidu" onclick="inputFocus(); baiduMusic()">
-					<label for="baidu6">Music</label>
 
 				</div>
 
@@ -371,14 +299,6 @@
 					<input type="radio" id="yandex7" name="yandex" onclick="inputFocus(); yandexNews()">
 					<label for="yandex7">News</label>
 
-					<input type="radio" id="yandex4" name="yandex" onclick="inputFocus(); yandexMaps()">
-					<label for="yandex4">Maps</label>
-					
-					<input type="radio" id="yandex5" name="yandex" onclick="inputFocus(); yandexTranslate()">
-					<label for="yandex5">Translate</label>
-
-					<input type="radio" id="yandex6" name="yandex" onclick="inputFocus(); yandexMusic()">
-					<label for="yandex6">Music</label>
 
 				</div>
 
@@ -412,20 +332,13 @@
 					<input type="radio" name="social" id="meetup" onclick="meetup()">
 					<label for="meetup">Meetup</label>
 
-					<input type="radio" name="social" id="ello" onclick="ello()">
-					<label for="ello">Ello</label>
-
-					<input type="radio" name="social" id="myspace" onclick="myspace()">
-					<label for="myspace">Myspace</label>
-
+					
 					<input type="radio" name="social" id="vk" onclick="vk()">
 					<label for="vk">VK</label>
 
 					<input type="radio" name="social" id="snapchat" onclick="snapchat()">
 					<label for="snapchat">Snapchat</label>
 
-					<input type="radio" name="social" id="periscope" onclick="periscope()">
-					<label for="periscope">Periscope</label>
 
 				</div>
 
@@ -435,38 +348,16 @@
 					<input type="radio" name="video" id="youtube" onclick="youtube()" checked>
 					<label for="youtube">YouTube</label>
 
-					<input type="radio" name="video" id="twitch" onclick="twitch()">
-					<label for="twitch">Twitch</label>
-
-					<input type="radio" name="video" id="netflix" onclick="netflix()">
-					<label for="netflix">Netflix</label>
-
 					<input type="radio" name="video" id="dailymotion" onclick="dailymotion()">
 					<label for="dailymotion">Dailymotion</label>
 
 					<input type="radio" name="video" id="vimeo" onclick="vimeo()">
 					<label for="vimeo">Vimeo</label>
 
-					<input type="radio" name="video" id="hulu" onclick="hulu()">
-					<label for="hulu">Hulu</label>
-
 					<input type="radio" name="video" id="ted" onclick="ted()">
 					<label for="ted">TED</label>
 
-					<input type="radio" name="video" id="vudu" onclick="vudu()">
-					<label for="vudu">VUDU</label>
 
-					<input type="radio" name="video" id="msn-video" onclick="msnVideo()">
-					<label for="msn-video">MSN</label>
-
-					<input type="radio" name="video" id="aol-video" onclick="aolVideo()">
-					<label for="aol-video">AOL</label>
-
-					<input type="radio" name="video" id="metacafe" onclick="metacafe()">
-					<label for="metacafe">Metacafe</label>
-
-					<input type="radio" name="video" id="viewster" onclick="viewster()">
-					<label for="viewster">Viewster</label>
 
 				</div>
 
@@ -481,39 +372,14 @@
 
 					<input type="radio" name="image" id="giphy" onclick="giphy()">
 					<label for="giphy">GIPHY</label>
-
-					<input type="radio" name="image" id="freepik" onclick="freepik()">
-					<label for="freepik">Freepik</label>
-
-					<input type="radio" name="image" id="unsplash" onclick="unsplash()">
-					<label for="unsplash">Unsplash</label>
-
-					<input type="radio" name="image" id="pixabay" onclick="pixabay()">
-					<label for="pixabay">Pixabay</label>
-
-					<input type="radio" name="image" id="pexels" onclick="pexels()">
-					<label for="pexels">Pexels</label>
-
+					
 					<input type="radio" name="image" id="itock" onclick="shutterstock()">
 					<label for="itock">Shutterstock</label>
 
 					<input type="radio" name="image" id="gettyimages" onclick="gettyImages()">
 					<label for="gettyimages">Getty Images</label>
 
-					<input type="radio" name="image" id="adobestock" onclick="adobeStock()">
-					<label for="adobestock">Adobe Stock</label>
-
-					<input type="radio" name="image" id="deviantart" onclick="deviantArt()">
-					<label for="deviantart">DeviantArt</label>
-
-					<input type="radio" name="image" id="smugmug" onclick="smugMug()">
-					<label for="smugmug">SmugMug</label>
-
-					<input type="radio" name="image" id="500px" onclick="_500px()">
-					<label for="500px">500px</label>
-
-					<input type="radio" name="image" id="poly" onclick="poly()">
-					<label for="poly">Poly</label>
+				
 
 				</div>
 
