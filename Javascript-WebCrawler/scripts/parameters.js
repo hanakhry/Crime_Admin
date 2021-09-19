@@ -819,6 +819,13 @@ function macys() {
 
 //	News
 
+function haaretz() {
+	document.getElementById("walla").checked=true;
+	xUrl="https://www.haaretz.co.il/search-results?q=";
+	xColor="#0085c8";
+	xImage="haaretz";
+	t1();
+}
 function walla() {
 	document.getElementById("walla").checked=true;
 	xUrl="https://search.walla.co.il/?q=";
