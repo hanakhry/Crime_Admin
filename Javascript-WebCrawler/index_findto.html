@@ -74,11 +74,12 @@
 	   		<button id="menu-button" type="button">Menu</button>
 
 		  	<ul>
-			    <li>
-					<button type="default-tab" class="tab-button nav-btn icon-news" onclick="hideEngines(); openTab(event, 'news-tab'); selectedButton(this); haaretz()">News</button>
+			    
+				<li>
+					<button id="default-tab" type="button" class="tab-button nav-btn icon-web" onclick="showEngines(); openTab(event, 'google-tab'); selectedButton(this); google()">Web</button>
 				</li>
 				<li>
-					<button id="button" type="button" class="tab-button nav-btn icon-web" onclick="showEngines(); openTab(event, 'google-tab'); selectedButton(this); google()">Web</button>
+					<button type="button" class="tab-button nav-btn icon-news" onclick="hideEngines(); openTab(event, 'news-tab'); selectedButton(this); haaretz()">News</button>
 				</li>
 				<li>
 					<button type="button" class="tab-button nav-btn icon-social" onclick="hideEngines(); openTab(event, 'social-tab'); selectedButton(this); facebook()">Social</button>
@@ -505,13 +506,13 @@
 
 				<!-- News -->
 				<div class="tab" id="news-tab">
-                    <input type="radio" name="news" id="haaretz" onclick="haaretz()" checked>
+                    <input type="radio" name="news" id="haaretz" onclick="haaretz()" >
 					<label for="haaretz">Haaretz</label> 
 					
 					<input type="radio" name="news" id="walla" onclick="walla()" >
 					<label for="walla">Walla!</label> 
 					
-					<input type="radio" name="news" id="reuters" onclick="reuters()">
+					<input type="radio" name="news" id="reuters" onclick="reuters()" checked>
 					<label for="reuters">Reuters</label>
 
 					<input type="radio" name="news" id="cnn" onclick="cnn()">
