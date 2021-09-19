@@ -819,6 +819,14 @@ function macys() {
 
 //	News
 
+function walla() {
+	document.getElementById("walla").checked=true;
+	xUrl="https://search.walla.co.il/?q=";
+	xQuery="blob";
+	xColor="#0085c8";
+	xImage="walla";
+	t2();
+}
 function reuters() {
 	document.getElementById("reuters").checked=true;
 	xUrl="https://www.reuters.com/search/news?blob=";

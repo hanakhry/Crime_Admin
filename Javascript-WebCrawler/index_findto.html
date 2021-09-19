@@ -97,7 +97,7 @@
 				
 		    </ul>
 
-		    <button id="info-button" data-fancybox >Settings</button>
+		  
 
 	    </nav>
 
@@ -505,7 +505,10 @@
 
 				<!-- News -->
 				<div class="tab" id="news-tab">
-
+                     
+					<input type="radio" name="news" id="walla" onclick="walla()" checked>
+					<label for="walla">Walla!</label> 
+					
 					<input type="radio" name="news" id="reuters" onclick="reuters()" checked>
 					<label for="reuters">Reuters</label>
 
@@ -668,42 +671,11 @@
 
 
 	<!-- Widgets -->
-	<section>
-
-		<div class="widgets">
-
-			<!-- Trends -->
-			<div class="widget widget-trends">
-
-				<figure><h2>Search Trends</h2></figure>
-				
-				<div id="trends-container">
-					<ol data-rss-feed="https://trends.google.com/trends/trendingsearches/daily/rss"></ol>
-				</div>
-
-		  	</div>
-
-			<!-- Clock -->
-			<div class="widget widget-clock">
-
-				<figure><h2><span id="wkDay"></span>, <span id="month"></span> <span id="day"></span><!-- , <span id="year"></span> --></h2></figure>
-
-				<p><span id="time"></span></p>				
-			</div>
-
-			<!-- Share -->
-		
-			
-
-		</div>
-		
-	</section>
-
+	
 	<!-- Settings -->
 	
 
 	<footer>
-		<p><a data-fancybox data-src="#about" href="javascript:;">About</a> · <a data-fancybox data-src="#privacy" href="javascript:;">Privacy</a> · <a data-fancybox data-src="#terms" href="javascript:;">Terms</a> · <a data-fancybox data-src="#license" href="javascript:;">Licenses</a>  · <a data-fancybox data-src="#feedback" href="javascript:;">Feedback</a></p>
 	</footer>
 
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
