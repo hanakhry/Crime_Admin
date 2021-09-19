@@ -825,7 +825,7 @@ function walla() {
 	xQuery="blob";
 	xColor="#0085c8";
 	xImage="walla";
-	t2();
+	t1();
 }
 function reuters() {
 	document.getElementById("reuters").checked=true;
